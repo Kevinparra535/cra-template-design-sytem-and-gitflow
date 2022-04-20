@@ -61,15 +61,15 @@ src/
   // or
 
   class Stateful extends Component {
-  	constructor(props) {
-  		super(props);
+    constructor(props) {
+      super(props);
 
-  		this.state = { hello: 'hello world' };
-  	}
+      this.state = { hello: 'hello world' };
+    }
 
-  	render() {
-  		return <h1>{this.state.hello}</h1>;
-  	}
+    render() {
+      return <h1>{this.state.hello}</h1>;
+    }
   }
 
   export default Stateful;
