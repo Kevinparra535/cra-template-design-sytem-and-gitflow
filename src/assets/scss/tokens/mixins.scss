@@ -1,0 +1,86 @@
+@use 'sass:math';
+
+@import '../Tokens/colors';
+@import '../Tokens/spacings';
+@import '../Tokens/typos';
+
+// Otorga mayuscula automatica al tipo de fuente 2
+@mixin titulos($fuente) {
+	@if $fuente==$Fuente1 {
+		font-family: $Fuente1;
+	} @else {
+		font-family: $Fuente2;
+		text-transform: uppercase;
+	}
+}
+
+//Funcion para el texto responsivo
+@function calculateRem($size) {
+	$remSize: math.div($size, 16px);
+	@return $remSize * 1rem;
+}
+
+@mixin headers {
+	padding: $space_x3 0;
+	h1 {
+		letter-spacing: $space;
+		font-weight: $light;
+		color: $color-oscuro;
+		@include font-size($h2);
+	}
+	img {
+		margin: $space_x2 0;
+		height: 20px;
+	}
+	p {
+		letter-spacing: $space;
+		font-weight: $light;
+		color: $color-oscuro;
+		@include font-size($p);
+	}
+}
+
+// Estilo de los botones
+@mixin botones {
+	padding: $space $space_x3;
+	margin-bottom: $space_x3;
+	font-weight: $medium;
+	color: $color-oscuro;
+	background-color: $color-primario;
+	@include font-size($p);
+	&:hover {
+		text-transform: none;
+		text-decoration: none;
+		background-color: get-opacity($color-primario, 0.8);
+	}
+}
+
+@mixin sombras {
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+//Funcion para el texto responsivo
+@function calculateRem($size) {
+	$remSize: math.div($size, 16px);
+	@return $remSize * 1rem;
+}
+
+// Dependiendo del tamaño del texto se selecciona un alto de linea automatica
+@mixin font-size($size) {
+	font-size: $size;
+	font-size: calculateRem($size);
+	line-height: calculateRem($size) * 1.5;
+}
+
+// Opacidad
+@function get-opacity($color, $amount) {
+	@return rgba($color, $amount);
+}
+
+@each $header, $size in (h1: 30px, h2: 25px, h3: $space_x2) {
+	#{$header} {
+		//Se declara el elemento
+		font-size: $size; //Le decimos que por cada etiqueta h imprimimos los valores
+		margin: 0;
+	}
+}
