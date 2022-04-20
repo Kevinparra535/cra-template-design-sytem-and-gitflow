@@ -32,6 +32,7 @@ src/
 ### **📁 Components**
 
 - Esta carpeta contiene todos los componentes de presentación de nuestra aplicación (Stateless Components).
+
   ```jsx
   import React from 'react';
 
@@ -141,7 +142,7 @@ El flujo general de Gitflow es el siguiente:
 
 ### Estructura
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5703aa57-e4a4-4d04-86f6-d5661fb14bb4/Untitled.png)
+![style_guide](/screenshots/style_guide.png)
 
 ### Generales
 
