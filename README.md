@@ -1,6 +1,13 @@
 # React Folders Structure
 
-ReactJS application with intermediate folder structure. Here is a full article where i explain all folders and their roles.
+Aplicación ReactJS con estructura de carpetas intermedia. Artículo completo donde explico todas las carpetas y sus funciones.
+
+
+## Getting started
+
+## Extensiones
+
+## Estructura
 
 ```
 src/
@@ -37,7 +44,7 @@ src/
   import React from 'react';
 
   const Stateless = () => {
-  	return <h1>¡Hola!</h1>;
+    return <h1>¡Hola!</h1>;
   };
 
   export default Stateless;
@@ -175,15 +182,15 @@ Propiedades y selectores deben ordenarse de la siguiente forma:
 
 ```scss
 .button {
- padding: 20px 30px;
- display: block;
- position: relative;
- width: 220px;
- height: 40px;
- text-transform: uppercase;
- font-weight: $semibold;
- color: #ffff;
- background-color: #333333;
- @include font-size(13px);
+  padding: 20px 30px;
+  display: block;
+  position: relative;
+  width: 220px;
+  height: 40px;
+  text-transform: uppercase;
+  font-weight: $semibold;
+  color: #ffff;
+  background-color: #333333;
+  @include font-size(13px);
 }
 ```
