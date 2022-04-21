@@ -32,7 +32,43 @@ Aplicación ReactJS con estructura de carpetas intermedia. Artículo completo do
 
 ## Getting started
 
+```js
+
+  // install all dependencies
+  npm install
+
+  // run react server
+  npm run start
+
+  // run docs server
+  npm run styleguide
+
+  // build final doc
+  npm run styleguide:build
+```
+
 ## Extensiones
+
+Extensiones que complementan la estructura
+
+- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+- [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
+- [GitGraph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph)
+- [GitHistory](https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory)
+
+Extensiones opcionales
+
+- [Paquetes de iconos](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
+- [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
+- [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight)
+- [Color the tag name](https://marketplace.visualstudio.com/items?itemName=jzmstrjp.color-the-tag-name)
+- [ES7+ React/Redux/React-Native snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)
+- [GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot)
+- [JavaScript (ES6) code snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets)
+- [JS JSX Snippets](https://marketplace.visualstudio.com/items?itemName=skyran.js-jsx-snippets)
+- [npm Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.npm-intellisense)
+- [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync)
 
 ## Estructura
 
