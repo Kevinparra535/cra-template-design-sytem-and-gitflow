@@ -49,7 +49,7 @@ Aplicación ReactJS con estructura de carpetas intermedia. Artículo completo do
 
 ## Extensiones
 
-Extensiones que complementan la estructura
+##### Extensiones que complementan la estructura:
 
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
@@ -57,7 +57,7 @@ Extensiones que complementan la estructura
 - [GitGraph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph)
 - [GitHistory](https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory)
 
-Extensiones opcionales
+##### Extensiones opcionales:
 
 - [Paquetes de iconos](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
 - [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
