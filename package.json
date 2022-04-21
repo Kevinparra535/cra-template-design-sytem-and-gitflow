@@ -56,7 +56,6 @@
     "eslint-plugin-react": "^7.29.4",
     "eslint-plugin-react-hooks": "^4.4.0",
     "husky": "^7.0.4",
-    "react-app-env": "^1.2.3",
     "react-styleguidist": "^11.2.0"
   },
   "description": "ReactJS application with intermediate folder structure. Here is a full article where i explain all folders and their roles.",
