@@ -1,80 +1,83 @@
 {
-	"name": "structure-proposal",
-	"version": "0.1.0",
-	"private": true,
-	"dependencies": {
-		"@testing-library/jest-dom": "^5.16.4",
-		"@testing-library/react": "^13.1.1",
-		"@testing-library/user-event": "^13.5.0",
-		"prettier": "^2.6.2",
-		"react": "^18.0.0",
-		"react-dom": "^18.0.0",
-		"react-scripts": "5.0.1",
-		"sass": "^1.50.1",
-		"web-vitals": "^2.1.4"
-	},
-	"scripts": {
-		"start": "react-scripts start",
-		"build": "react-scripts build",
-		"test": "react-scripts test",
-		"eject": "react-scripts eject"
-	},
-	"husky": {
-		"hooks": {
-			"pre-commit": "npm test",
-			"pre-push": "npm test",
-			"...": "..."
-		}
-	},
-	"eslintConfig": {
-		"extends": [
-			"react-app",
-			"react-app/jest"
-		]
-	},
-	"browserslist": {
-		"production": [
-			">0.2%",
-			"not dead",
-			"not op_mini all"
-		],
-		"development": [
-			"last 1 chrome version",
-			"last 1 firefox version",
-			"last 1 safari version"
-		]
-	},
-	"devDependencies": {
-		"babel-eslint": "^10.1.0",
-		"eslint": "^8.13.0",
-		"eslint-config-airbnb": "^19.0.4",
-		"eslint-config-prettier": "^8.5.0",
-		"eslint-plugin-import": "^2.26.0",
-		"eslint-plugin-jsx-a11y": "^6.5.1",
-		"eslint-plugin-prettier": "^4.0.0",
-		"eslint-plugin-react": "^7.29.4",
-		"eslint-plugin-react-hooks": "^4.4.0",
-		"husky": "^7.0.4"
-	},
-	"description": "ReactJS application with intermediate folder structure. Here is a full article where i explain all folders and their roles.",
-	"main": "index.js",
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/Kevinparra535/design-sytem-and-gitflow.git"
-	},
-	"keywords": [
-		"react",
-		"react-app",
-		"react-scripts",
-		"boilerplate",
-		"starter",
-		"design-system",
-		"gitflow"
-	],
-	"author": "Kevin Parra Lopez <kevinparra535@gmail.com>",
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/Kevinparra535/design-sytem-and-gitflow/issues"
-	},
-	"homepage": ""
+  "name": "structure-proposal",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.1.1",
+    "@testing-library/user-event": "^13.5.0",
+    "prettier": "^2.6.2",
+    "prop-types": "^15.8.1",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-scripts": "5.0.1",
+    "sass": "^1.50.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build styleguidist build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "styleguide": "styleguidist server",
+    "styleguide:build": "styleguidist build"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test",
+      "pre-push": "npm test"
+    }
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^8.13.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.4.0",
+    "husky": "^7.0.4",
+    "react-styleguidist": "^11.2.0"
+  },
+  "description": "ReactJS application with intermediate folder structure. Here is a full article where i explain all folders and their roles.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kevinparra535/design-sytem-and-gitflow.git"
+  },
+  "keywords": [
+    "react",
+    "react-app",
+    "react-scripts",
+    "boilerplate",
+    "starter",
+    "design-system",
+    "gitflow"
+  ],
+  "author": "Kevin Parra Lopez <kevinparra535@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Kevinparra535/design-sytem-and-gitflow/issues"
+  },
+  "homepage": ""
 }

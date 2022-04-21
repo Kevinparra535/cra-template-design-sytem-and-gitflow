@@ -15,6 +15,10 @@ module.exports = {
   rules: {
     indent: ['error', 2],
     'react/jsx-indent': ['error', 2],
+    'arrow-body-style': ['error', 'always'],
+    'react/function-component-definition': [0],
+    'react/button-has-type': [0],
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
+    'react/prop-types': [0],
   },
 };
