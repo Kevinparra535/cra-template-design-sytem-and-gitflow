@@ -2,6 +2,33 @@
 
 Aplicación ReactJS con estructura de carpetas intermedia. Artículo completo donde explico todas las carpetas y sus funciones.
 
+## Tabla de contenido
+
+- [Getting started](https://github.com/Kevinparra535/design-sytem-and-gitflow/tree/master#getting-started)
+
+- [Extensiones](https://github.com/Kevinparra535/design-sytem-and-gitflow/tree/master#extensiones)
+
+- [Estructura](https://github.com/Kevinparra535/design-sytem-and-gitflow/tree/master#estructura)
+
+  - [Assets](https://github.com/Kevinparra535/design-sytem-and-gitflow/tree/master#-assets)
+  - [Components](https://github.com/Kevinparra535/design-sytem-and-gitflow/tree/master#-components)
+  - [Containers](https://github.com/Kevinparra535/design-sytem-and-gitflow/tree/master#-containers)
+  - [Constants](https://github.com/Kevinparra535/design-sytem-and-gitflow/tree/master#-constants)
+  - [Helpers](https://github.com/Kevinparra535/design-sytem-and-gitflow/tree/master#-helpers)
+  - [Hooks](https://github.com/Kevinparra535/design-sytem-and-gitflow/tree/master#-hooks)
+  - [Layouts](https://github.com/Kevinparra535/design-sytem-and-gitflow/tree/master#-layouts)
+  - [Pages](https://github.com/Kevinparra535/design-sytem-and-gitflow/tree/master#-pages)
+  - [Validations](https://github.com/Kevinparra535/design-sytem-and-gitflow/tree/master#-validations)
+  - [Services](https://github.com/Kevinparra535/design-sytem-and-gitflow/tree/master#-services)
+  - [Contexts](https://github.com/Kevinparra535/design-sytem-and-gitflow/tree/master#-contexts)
+  - [Config](https://github.com/Kevinparra535/design-sytem-and-gitflow/tree/master#-config)
+  - [i18n](https://github.com/Kevinparra535/design-sytem-and-gitflow/tree/master#-i18n)
+
+- [GitFlow](https://github.com/Kevinparra535/design-sytem-and-gitflow/tree/master#gitflow)
+
+- [Guia de estilos](https://github.com/Kevinparra535/design-sytem-and-gitflow/tree/master#guia-de-estilos)
+
+![landing screenshot]('/screenshots/)
 
 ## Getting started
 
@@ -9,7 +36,7 @@ Aplicación ReactJS con estructura de carpetas intermedia. Artículo completo do
 
 ## Estructura
 
-```
+```cmd
 src/
 ├─ assets/
 │  ├─ fonts/
@@ -131,13 +158,13 @@ src/
 
 El flujo general de Gitflow es el siguiente:
 
-- Se crea una rama develop a partir de main.
-- Se crea una rama release a partir de la develop.
-- Se crean ramas feature a partir de la develop.
-- Cuando se termina una rama feature, se fusiona en la rama develop.
-- Cuando la rama release está lista, se fusiona en las ramas develop y main.
+- Se crea una rama master a partir de main.
+- Se crea una rama release a partir de la master.
+- Se crean ramas feature a partir de la master.
+- Cuando se termina una rama feature, se fusiona en la rama master.
+- Cuando la rama release está lista, se fusiona en las ramas master y main.
 - Si se detecta un problema en main, se crea una rama hotfix a partir de main.
-- Una vez terminada la rama hotfix, esta se fusiona tanto en develop como en main.
+- Una vez terminada la rama hotfix, esta se fusiona tanto en master como en main.
 
 ## Guia de estilos
 
