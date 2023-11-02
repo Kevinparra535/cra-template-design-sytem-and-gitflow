@@ -2,9 +2,6 @@
   "name": "cra-template-design-sytem-and-gitflow",
   "version": "1.0.3",
   "description": "React Folders Structure is an Atomic Design-based design system, providing an efficient folder structure for ReactJS projects. With intuitively organized components, services, and validations, this system facilitates code maintenance and scalability. It includes tools such as ESLint and Prettier, and a complete style guide, to ensure clean and consistent code.",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [
     "ReactJS",
     "design",
@@ -15,15 +12,34 @@
     "eslintrc",
     "jest"
   ],
-  "author": "Kevin Parra Lopez <kevinparra535@gmail.com>",
-  "license": "MIT",
   "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Kevinparra535/design-sytem-and-gitflow-javascript.git"
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3"
   },
-  "bugs": {
-    "url": "https://github.com/Kevinparra535/design-sytem-and-gitflow-javascript/issues"
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "homepage": "https://github.com/Kevinparra535/design-sytem-and-gitflow-javascript#readme"
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
