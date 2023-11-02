@@ -7,7 +7,7 @@ React Folders Structure is an Atomic Design-based design system that provides an
 ### Create react app
 
 ```cmd
-  npx create-react-app my-app --template @kevinparra535/design-sytem-and-gitflow-javascript
+  npx create-react-app my-app --template cra-template-design-sytem-and-gitflow
 ```
 
 ### Vite
