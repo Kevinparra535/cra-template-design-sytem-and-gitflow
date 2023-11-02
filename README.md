@@ -5,17 +5,10 @@ React Folders Structure is an Atomic Design-based design system that provides an
 ## Getting Started 🚀
 
 ```js
-  // install all dependencies
-  npm install
 
-  // run react server
-  npm run start
+  // Create react app
+  npx create-react-app my-app --template Kevinparra535/design-sytem-and-gitflow-javascript
 
-  // run docs server
-  npm run styleguide
-
-  // build final doc
-  npm run styleguide:build
 ```
 
 ## [Documentation 📕](https://github.com/Kevinparra535/design-sytem-and-gitflow-javascript/wiki)
