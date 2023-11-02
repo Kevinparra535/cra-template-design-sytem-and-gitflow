@@ -1,6 +1,6 @@
 {
   "name": "cra-template-design-sytem-and-gitflow",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "React Folders Structure is an Atomic Design-based design system, providing an efficient folder structure for ReactJS projects. With intuitively organized components, services, and validations, this system facilitates code maintenance and scalability. It includes tools such as ESLint and Prettier, and a complete style guide, to ensure clean and consistent code.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
