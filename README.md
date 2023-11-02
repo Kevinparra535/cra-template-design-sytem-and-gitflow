@@ -1,15 +1,12 @@
 # React Folders Structure
 
-Aplicación ReactJS con estructura de carpetas intermedia. Artículo completo donde explico todas las carpetas y sus funciones.
+React Folders Structure is an Atomic Design-based design system that provides an efficient folder structure for ReactJS projects. With intuitively organized components, services, and validations, this system facilitates code maintenance and scalability. It includes tools such as ESLint and Prettier, as well as a comprehensive style guide, to ensure clean and consistent code.
 
-## Tabla de contenido
+## Table of Contents
 
 - [Getting started](https://github.com/Kevinparra535/design-sytem-and-gitflow/tree/master#getting-started)
-
-- [Extensiones](https://github.com/Kevinparra535/design-sytem-and-gitflow/tree/master#extensiones)
-
-- [Estructura](https://github.com/Kevinparra535/design-sytem-and-gitflow/tree/master#estructura)
-
+- [Extensions](https://github.com/Kevinparra535/design-sytem-and-gitflow/tree/master#extensions)
+- [Structure](https://github.com/Kevinparra535/design-sytem-and-gitflow/tree/master#structure)
   - [Assets](https://github.com/Kevinparra535/design-sytem-and-gitflow/tree/master#-assets)
   - [Components](https://github.com/Kevinparra535/design-sytem-and-gitflow/tree/master#-components)
   - [Containers](https://github.com/Kevinparra535/design-sytem-and-gitflow/tree/master#-containers)
@@ -23,17 +20,14 @@ Aplicación ReactJS con estructura de carpetas intermedia. Artículo completo do
   - [Contexts](https://github.com/Kevinparra535/design-sytem-and-gitflow/tree/master#-contexts)
   - [Config](https://github.com/Kevinparra535/design-sytem-and-gitflow/tree/master#-config)
   - [i18n](https://github.com/Kevinparra535/design-sytem-and-gitflow/tree/master#-i18n)
-
 - [GitFlow](https://github.com/Kevinparra535/design-sytem-and-gitflow/tree/master#gitflow)
-
-- [Guia de estilos](https://github.com/Kevinparra535/design-sytem-and-gitflow/tree/master#guia-de-estilos)
+- [Style Guide](https://github.com/Kevinparra535/design-sytem-and-gitflow/tree/master#style-guide)
 
 ![landing screenshot]('/screenshots/)
 
-## Getting started
+## Getting Started
 
 ```js
-
   // install all dependencies
   npm install
 
@@ -47,9 +41,9 @@ Aplicación ReactJS con estructura de carpetas intermedia. Artículo completo do
   npm run styleguide:build
 ```
 
-## Extensiones
+## Extensions
 
-##### Extensiones que complementan la estructura:
+##### Extensions that complement the structure:
 
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
@@ -57,20 +51,20 @@ Aplicación ReactJS con estructura de carpetas intermedia. Artículo completo do
 - [GitGraph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph)
 - [GitHistory](https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory)
 
-##### Extensiones opcionales:
+##### Optional extensions:
 
-- [Paquetes de iconos](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
+- [Icon Packages](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
 - [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
 - [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight)
-- [Color the tag name](https://marketplace.visualstudio.com/items?itemName=jzmstrjp.color-the-tag-name)
-- [ES7+ React/Redux/React-Native snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)
+- [Color the Tag Name](https://marketplace.visualstudio.com/items?itemName=jzmstrjp.color-the-tag-name)
+- [ES7+ React/Redux/React-Native Snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)
 - [GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot)
-- [JavaScript (ES6) code snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets)
+- [JavaScript (ES6) Code Snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets)
 - [JS JSX Snippets](https://marketplace.visualstudio.com/items?itemName=skyran.js-jsx-snippets)
 - [npm Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.npm-intellisense)
 - [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync)
 
-## Estructura
+## Structure
 
 ```cmd
 src/
@@ -96,18 +90,18 @@ src/
 
 ### **📁 Assets**
 
-- Aquí agrupamos todos nuestros archivos multimedia.
-- Contiene subcarpetas como **`Images, Icons, Videos, Audios`,** etc.
+- Here we group all our multimedia files.
+- Contains subfolders such as **`Images, Icons, Videos, Audios`,** etc.
 
 ### **📁 Components**
 
-- Esta carpeta contiene todos los componentes de presentación de nuestra aplicación (Stateless Components).
+- This folder contains all the presentation components of our application (Stateless Components).
 
   ```jsx
   import React from 'react';
 
   const Stateless = () => {
-    return <h1>¡Hola!</h1>;
+    return <h1>Hello!</h1>;
   };
 
   export default Stateless;
@@ -115,16 +109,14 @@ src/
 
 ### **📁 Containers**
 
-- En esta carpeta tenemos los componentes Stateful (Smart component) donde seguimos rastreando el estado.
+- In this folder, we have the Stateful (Smart component) components where we keep track of the state.
 
   ```jsx
   import React, { Component, useState } from 'react';
 
   const Stateful = () => {
-
-    const [state, setState] = useState({ hello: 'hello world' })
-
-  	return <h1>{this.state.hello}</h1>;
+    const [state, setState] = useState({ hello: 'hello world' });
+    return <h1>{state.hello}</h1>;
   };
 
   export default Stateful;
@@ -134,7 +126,6 @@ src/
   class Stateful extends Component {
     constructor(props) {
       super(props);
-
       this.state = { hello: 'hello world' };
     }
 
@@ -148,100 +139,102 @@ src/
 
 ### **📁 Constants**
 
-- En este archivo agrupamos todas las constantes como regex.
+- In this file, we group all the constants like regex.
 
 ### **📁 Helpers**
 
-- Aquí creamos y exportamos funciones que serán reutilizadas en diferentes lugares de nuestra aplicación.
+- Here we create and export functions that will be reused in different places of our application.
 
 ### **📁 Hooks**
 
-- Una carpeta hecha para ganchos personalizados.
+- A folder made for custom hooks.
 
 ### **📁 Layouts**
 
-- Contiene archivos de diseño como .**`Navbar, Footer, Sidebar`**
-- Los diseños se utilizan para envolver un componente específico.
+- Contains layout files such as **`Navbar, Footer, Sidebar`**.
+- Layouts are used to wrap a specific component.
 
 ### **📁 Pages**
 
-- Esta carpeta contiene componentes de páginas como etc...**`Home, Contact`**
-- Cada página envuelta con un **`Layout`**
+- This folder contains page components such as **`Home, Contact`**.
+- Each page is wrapped with a **`Layout
+
+`**.
 
 ### **📁 Validations**
 
-> Aquí escribimos nuestra validación de formularios y reglas utilizando una biblioteca como Formik o react-hook-form.
+> Here we write our form validations and rules using a library like Formik or react-hook-form.
 
 ### **📁 Services**
 
-- En esta carpeta gestionamos todas las solicitudes de API creando archivos para cada servicio.
+- In this folder, we manage all the API requests by creating files for each service.
 
 ### **📁 Contexts**
 
-- Esta carpeta contiene todos los archivos de contexto donde gestionamos y globalizamos el estado en nuestra aplicación como estilos de tematización.
+- This folder contains all the context files where we manage and globalize the state in our application, like theme styles.
 
 ### **📁 Config**
 
-- Toda la configuración de nuestra aplicación estará aquí en esta carpeta.
+- All the configuration of our application will be here in this folder.
 
 ### **📁 i18n**
 
-- Esta carpeta está hecha para soporte multi-idioma.
-- Puede crear subcarpetas con un archivo para cada idioma que desee traducir.**`JSON`**
-- Echa un vistazo a su guía Paso a Paso **_[AQUÍ](https://react.i18next.com/latest/using-with-hooks)_**.
+- This folder is made for multi-language support.
+- You can create subfolders with a file for each language you want to translate. **`JSON`**
+- Check out their Step by Step Guide **_[HERE](https://react.i18next.com/latest/using-with-hooks)_**.
 
 ## GitFlow
 
-El flujo general de Gitflow es el siguiente:
+The general Gitflow is as follows:
 
-- Se crea una rama master a partir de main.
-- Se crea una rama release a partir de la master.
-- Se crean ramas feature a partir de la master.
-- Cuando se termina una rama feature, se fusiona en la rama master.
-- Cuando la rama release está lista, se fusiona en las ramas master y main.
-- Si se detecta un problema en main, se crea una rama hotfix a partir de main.
-- Una vez terminada la rama hotfix, esta se fusiona tanto en master como en main.
+- A master branch is created from main.
+- A release branch is created from master.
+- Feature branches are created from master.
+- When a feature branch is finished, it merges into master.
+- When the release branch is ready, it merges into both master and main.
+- If a problem is detected in main, a hotfix branch is created from main.
+- Once the hotfix branch is finished, it merges into both master and main.
 
-## Guia de estilos
+## Style Guide
 
-### Principios
+### Principles
 
-- Mantenerlo simple y reusar lo más posible.
-- Un código que luzca como si una sola persona lo haya escrito
-- Escribir para escalabilidad.
+- Keep it simple and reuse as much as possible.
+- Code that looks like it was written by one person.
+- Write for scalability.
 
-### Estructura
+### Structure
 
 ![style_guide](/screenshots/style_guide.png)
 
-### Generales
+### General
 
-- Usamos **BEM** como metodología de creación de código.
-- Nombre de archivos en plural (**Ejemplo**: buttons.scss)
-- Clases en singular y minúsculas (Ejemplo: .gallery\_\_button)
-- Nombrar imágenes relativas a su bloque. (Ejemplo: hero_background.png)
+- We use **BEM** as a code creation methodology.
+- File names in plural (**Example**: buttons.scss)
+- Classes in singular and lowercase (Example: .gallery\_\_button)
+- Name images relative to their block. (Example: hero_background.png)
 
-### Sintaxis
+### Syntax
 
-1.  Espacio después del selector y antes de {}
-2.  Espacios para indentación.
-3.  Espacio después del :
-    1. Bloques de CSS separados por 2 líneas
-    2. Evitar abuso de anidaciones. Limite 1 nivel
-    3. Mixins para tamaño, estilos y valores numéricos de fuentes.
+1. Space after the selector and before {}
+2. Spaces for indentation.
+3. Space after the :
+   1. CSS blocks separated by 2 lines
+   2. Avoid nesting abuse. Limit 1 level
+   3. Mixins for size, styles, and numerical font values.
 
-### Manejo de propiedades
+### Property Management
 
-Propiedades y selectores deben ordenarse de la siguiente forma:
+Properties and selectors should be sorted as follows:
 
-- Propiedades del modelo de caja (display, width, height, margin, etc)
-- Posicionamiento (position, left, top, right, etc)
-- Tipografía (text-transform, text-decoration)
-- Decoración (background-image, color, etc)
+- Box model properties (display, width, height, margin, etc)
+- Positioning (position, left, top, right, etc)
+- Typography (text-transform, text-decoration)
+- Decoration (background-image, color, etc)
 - Variables
 - Mixins
 
-### Ejemplo de código:
+### Code Example:
 
 ```scss
 .button {
